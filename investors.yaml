@@ -1,0 +1,81 @@
+# Better Ventures — Investor Routing Configuration
+# Used by: pitchbook-pipeline, BV-Acceleratorbot
+# Edit here to update investor assignments across all pipelines.
+
+version: 1
+
+investors:
+  Rick:
+    affinity_person_id: 2999193
+    email: rick@better.vc
+    primary_themes:
+      - climate
+    specializations:
+      - Health AI
+      - Electrification
+      - Buildings and construction
+      - EV Fleets
+      - Heat pumps
+      - Heavy industry energy
+      - Water heaters
+      - Electric grid
+      - Health remote monitoring
+    keywords:
+      - electrification
+      - electric grid
+      - heat pumps
+      - water heaters
+      - EV fleets
+      - heavy industry energy
+      - buildings and construction
+      - health AI
+      - health remote monitoring
+
+  Wes:
+    affinity_person_id: 2999192
+    email: wes@better.vc
+    primary_themes:
+      - health
+    specializations:
+      - Agriculture
+      - Food
+      - Metabolic health
+      - Nutrition
+      - Food as Medicine
+      - Gut microbiome
+      - Molecular farming
+      - Agtech
+    keywords:
+      - gut microbiome
+      - prebiotics
+      - postbiotics
+      - functional food
+      - GLP-1
+      - molecular farming
+      - metabolic health
+      - precision nutrition
+      - functional ingredients
+      - agtech
+
+  Lyndsey:
+    affinity_person_id: 5794280
+    email: lyndsey@better.vc
+    primary_themes:
+      - workforce
+    specializations:
+      - Education
+      - Work training
+      - Circular economy
+      - Recycling
+      - Used goods
+      - Frontline workforce
+      - Skilled trades
+    keywords:
+      - frontline workforce
+      - skilled trades
+      - healthcare workforce
+      - education
+      - work training
+      - circular economy
+      - recycling
+      - carbon credits

@@ -1,0 +1,82 @@
+# Better Ventures — Prestigious Investor & Accelerator Lists
+# Used by: pitchbook-pipeline, BV-Acceleratorbot, affinity-sync
+# Edit here to update across all pipelines.
+
+version: 1
+
+# ─── PRESTIGIOUS VCs ─────────────────────────────────────────────
+# Companies backed by these VCs with borderline thesis fit (5-6) get flagged for review.
+vcs:
+  - Y Combinator
+  - Andreessen Horowitz (a16z)
+  - Sequoia
+  - General Catalyst
+  - Founders Fund
+  - Khosla Ventures
+  - Accel
+  - Benchmark
+  - Greylock
+  - Index Ventures
+  - Lightspeed
+  - NEA
+  - Bessemer
+  - First Round Capital
+  - Union Square Ventures
+  - Craft Ventures
+  - 8VC
+  - Lux Capital
+
+# Normalized names for matching (lowercase, no spaces)
+vc_match_terms:
+  - y combinator
+  - yc
+  - andreessen horowitz
+  - a16z
+  - sequoia
+  - general catalyst
+  - founders fund
+  - khosla
+  - accel
+  - benchmark
+  - greylock
+  - index ventures
+  - lightspeed
+  - nea
+  - bessemer
+  - first round
+  - union square
+  - craft ventures
+  - 8vc
+  - lux capital
+
+# ─── TOP ACCELERATORS ───────────────────────────────────────────
+accelerators:
+  - Y Combinator
+  - Techstars
+  - IndieBio
+  - Activate
+  - 500 Startups
+  - Plug and Play
+
+# ─── NOTABLE ANGELS ──────────────────────────────────────────────
+angels:
+  - Paul Graham
+  - Reid Hoffman
+  - Elad Gil
+  - Dharmesh Shah
+  - Peter Thiel
+  - Marc Andreessen
+  - Chris Sacca
+  - Naval Ravikant
+  - Balaji Srinivasan
+
+angel_match_terms:
+  - paul graham
+  - reid hoffman
+  - elad gil
+  - dharmesh shah
+  - peter thiel
+  - marc andreessen
+  - chris sacca
+  - naval ravikant
+  - balaji srinivasan

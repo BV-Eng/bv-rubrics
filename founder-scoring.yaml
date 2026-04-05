@@ -1,0 +1,65 @@
+# Better Ventures — Founder Scoring Rubric
+# Used by: pitchbook-pipeline, BV-Acceleratorbot, affinity-sync
+# Edit here to update scoring across all pipelines.
+
+version: 1
+
+# ─── SCORING SCALE ───────────────────────────────────────────────
+# Single holistic score. Same 1-10 scale as company scoring.
+scoring_scale:
+  9-10: "Exceptional — top 5% of founders we see"
+  7-8: "Strong — clear positive signal"
+  5-6: "Average — meets baseline expectations"
+  3-4: "Weak — below expectations"
+  1-2: "Red flag — significant concern"
+
+# ─── SCORING PROMPT ──────────────────────────────────────────────
+# This is the core instruction sent to the LLM for founder evaluation.
+# Output: a single 1-10 score + one-sentence reasoning.
+prompt: |
+  Score this founder 1-10 on their potential to be an exceptional startup founder.
+  This is a single holistic score — not multiple sub-scores.
+
+  Consider these factors (roughly in order of importance):
+
+  1. EXECUTION & TRACK RECORD
+     Have they built and shipped things? Previous startups, products launched,
+     teams scaled. Evidence of getting things done matters more than titles.
+
+  2. DOMAIN / INDUSTRY EXPERTISE
+     Deep knowledge in Better Ventures thesis areas (climate, health, workforce)
+     is a meaningful boost. Technical depth in their company's space.
+
+  3. PRESTIGE & CREDENTIALS
+     Elite education (Stanford, MIT, Harvard, Caltech, etc.), top companies
+     (FAANG, McKinsey, Goldman), advanced degrees (PhD, MD). These are signals,
+     not guarantees.
+
+  4. MISSION & AUTHENTICITY
+     Personal connection to the problem. Founder-market fit. Career trajectory
+     that shows genuine commitment, not opportunism.
+
+  5. LEADERSHIP & NETWORK
+     Large professional network, ability to attract talent and capital.
+     Thought leadership, public visibility, board positions.
+
+  6. PRESTIGIOUS BACKING
+     Top accelerators (YC, Techstars, IndieBio) or Tier 1 VCs (a16z, Sequoia,
+     General Catalyst, etc.) are strong positive signals but not automatic high scores.
+
+  Scoring guidance:
+  - 9-10: Multiple strong signals. Elite credentials + proven execution + domain expertise.
+          Think: repeat founder with exits, or PhD from MIT building in their exact field.
+  - 7-8:  Strong in 2-3 areas. Good credentials with clear execution evidence.
+  - 5-6:  Solid in 1-2 areas. Decent background but limited differentiation.
+  - 3-4:  Thin profile. Limited experience, no standout signals.
+  - 1-2:  Red flags or essentially no relevant background.
+
+  When data is limited (e.g., sparse LinkedIn profile), lean toward 5 and note
+  the limitation in your reasoning. Don't penalize for missing data, but don't
+  inflate scores either.
+
+# ─── RESPONSE FORMAT ─────────────────────────────────────────────
+response_format: |
+  SCORE: [1-10]
+  REASON: [One sentence explaining the key factors that drove the score]

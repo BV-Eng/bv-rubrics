@@ -1,0 +1,202 @@
+# Better Ventures — Company Scoring Rubric
+# Used by: pitchbook-pipeline, BV-Acceleratorbot, affinity-sync
+# Edit here to update scoring across all pipelines.
+
+version: 1
+
+# ─── SCORING SCALE ───────────────────────────────────────────────
+# Same 1-10 scale used for all company evaluations.
+scoring_scale:
+  9-10: "Exceptional — top 5% of companies we see"
+  7-8: "Strong — clear positive signal"
+  5-6: "Average — meets baseline expectations"
+  3-4: "Weak — below expectations"
+  1-2: "Red flag — significant concern"
+
+# ─── INVESTMENT THESIS ───────────────────────────────────────────
+thesis: |
+  Better Ventures backs startups leveraging science & technology to build the Better Economy,
+  where people and the planet flourish.
+
+core_business_test: |
+  The thesis area MUST be the company's PRIMARY value proposition, not a side benefit or marketing angle.
+  - "Funds tree planting with each subscription" = NOT a climate company (it's marketing)
+  - "Hot meal delivery kiosks" = NOT food as medicine (it's convenience food)
+  - "AI chatbot that plants trees" = NOT climate (tree planting is a feature, not the product)
+  The CORE PRODUCT must directly address the thesis area to score 7+.
+
+# ─── THEMES ──────────────────────────────────────────────────────
+themes:
+  climate:
+    name: "Climate/Sustainability"
+    description: |
+      Reducing carbon emissions, waste, pollution. Electrification, Food & Ag, Bioeconomy, Circular Economy.
+      The company's CORE PRODUCT must directly reduce emissions, waste, or pollution.
+    keywords:
+      - carbon
+      - hydrogen
+      - clean energy
+      - renewable
+      - electrification
+      - EV
+      - batteries
+      - solar
+      - wind
+      - heat pumps
+      - grid
+      - carbon markets
+      - recycling
+      - water
+      - climate tech
+      - emissions
+      - decarbonization
+      - sustainable
+      - circular economy
+      - biodiversity
+      - green chemistry
+      - geospatial
+      - GIS
+      - environmental monitoring
+      - satellite imagery
+      - land use
+      - infrastructure monitoring
+      - sustainable materials
+      - sustainable textiles
+      - ocean technology
+      - sustainable fisheries
+      - aquaculture
+      - regenerative agriculture
+      - soil health
+      - compostable
+      - biodegradable
+      - plant-based materials
+      - carbon capture
+      - energy efficiency
+      - building efficiency
+    exclusion_notes: |
+      Fossil fuel/gas turbine powered solutions should NOT score 7+ on climate, even if "efficient".
+      Donating to environmental causes or carbon offsets as a feature = NOT a climate company.
+
+  health:
+    name: "Health/Longevity"
+    description: |
+      Biological insights and digital tools for health and lower cost of care.
+      Includes: healthcare infrastructure, healthcare planning, healthcare facilities, reduce cost of care.
+    keywords:
+      - metabolic health
+      - nutrition
+      - gut microbiome
+      - prebiotics
+      - longevity
+      - food as medicine
+      - personalized nutrition
+      - GLP-1
+      - wearables
+      - health monitoring
+      - healthcare
+      - behavioral health
+      - chronic disease
+      - diagnostics
+      - therapeutics
+      - biotech
+      - digital health
+      - telehealth
+      - medical devices
+      - prosthetics
+      - neuroprosthetics
+      - implantables
+      - assistive technology
+      - neurotechnology
+      - rehabilitation technology
+      - physical therapy
+      - orthopedic
+      - neuromuscular
+      - surgical robotics
+      - patient monitoring
+      - remote patient monitoring
+      - clinical decision support
+      - drug discovery
+      - genomics
+      - proteomics
+      - cell therapy
+      - gene therapy
+      - immunotherapy
+      - healthcare infrastructure
+      - healthcare planning
+      - healthcare construction
+      - healthcare facilities
+      - reduce cost of care
+      - healthcare operations
+      - hospital efficiency
+      - clinical workflows
+    food_as_medicine_clarification: |
+      YES (score 7+): Therapeutic diets, personalized nutrition, metabolic health, functional foods,
+      nutrition science, dietary interventions for chronic disease.
+      NO (score 4 or below): Generic meal delivery, convenience food, meal kits, food logistics,
+      restaurant tech, hot meal kiosks, food ordering platforms.
+
+  workforce:
+    name: "Opportunity/Workforce"
+    description: |
+      Adult reskilling/upskilling for the modern economy. NOT generic B2B SaaS or enterprise tools.
+      ONLY score 7+ if the company SPECIFICALLY addresses:
+      - Reskilling, upskilling, credentials, career pathways, digital credentials
+      - Frontline/healthcare/manufacturing/skilled trades workforce
+      - SMB-specific AI tools (not enterprise sales/marketing tools)
+      - Community college, trade schools, gig work, portable benefits
+      - Adult vocational/workforce training (NOT K-12 education)
+    keywords:
+      - reskilling
+      - upskilling
+      - workforce
+      - education
+      - personalized learning
+      - frontline workforce
+      - skilled trades
+      - manufacturing workforce
+      - talent
+      - ai for smbs
+      - small business
+      - credentials
+      - career pathways
+      - digital credentials
+      - community college
+      - trade schools
+      - gig work
+      - portable benefits
+      - vocational training
+    strict_note: |
+      Score 5 or below for: generic B2B SaaS, enterprise sales tools, accounting software,
+      IT services, CRM/marketing platforms, or any tool not specifically focused on
+      workforce reskilling/upskilling.
+
+# ─── EXCLUSIONS ──────────────────────────────────────────────────
+exclusions: |
+  These sectors should score LOW (1-3) on ALL themes:
+  - Financial services, PE firms, insurance brokerages, wealth management
+  - Enterprise sales/marketing tools, generic CRM platforms
+  - IT services, managed services, cybersecurity consulting
+  - Entertainment, consumer products, media, gaming, social media
+  - Real estate services, legal services, staffing agencies (without reskilling focus)
+
+# ─── ADDITIONAL SCORES (pitchbook-pipeline specific) ─────────────
+ai_score:
+  range: [1, 3]
+  3: "Central to value prop"
+  2: "Used but not core"
+  1: "Absent"
+
+software_score:
+  range: [1, 3]
+  3: "Pure SaaS"
+  2: "Software-enabled"
+  1: "Not software"
+
+# ─── STEALTH COMPANY RULES ──────────────────────────────────────
+stealth_rules: |
+  If a company has no description or a very vague description ("stealth", "in development", etc.)
+  BUT its name, keywords, or investors suggest alignment with health/climate/workforce themes,
+  mark it as stealth=true. Look for signals like:
+  - Health/biotech keywords in name (bio, health, therapeutics, genomics, orthopedic, neuro, etc.)
+  - Climate/energy keywords in name (energy, solar, carbon, green, etc.)
+  - Notable thesis-aligned investors (MBC BioLabs, biotech funds, climate funds)
