@@ -131,14 +131,28 @@ themes:
       Be inclusive here. AI tools that genuinely help workers do their jobs better
       or help SMBs compete count. Don't limit to just "reskilling" programs.
       But generic enterprise SaaS (CRM, marketing automation) does NOT count.
+      CRITICAL: The TARGET USER must be workers, job-seekers, students, tradespeople, or SMB owners.
+      Enterprise automation tools that replace workers (not augment them) do NOT count.
+      NOT workforce (score 1-3 on Opportunity):
+      - Enterprise workflow automation (RPA, agentic AI for enterprises)
+      - AI tools for financial institutions (lending, underwriting, compliance)
+      - Logistics/supply chain optimization
+      - Developer tools, DevOps, security tools
+      - Legal tech, legal automation
+      KEY TEST: Does this product primarily help individual workers or small business owners?
+      If it primarily helps enterprises automate internal processes, score 1-3 on Opportunity.
 
 # ─── EXCLUSIONS ──────────────────────────────────────────────────
 exclusions: |
   These should score LOW (1-3) on ALL themes:
-  - Pure financial services, insurance, wealth management
+  - Pure financial services, insurance, wealth management, lending, underwriting
   - Entertainment, gaming, social media
   - Crypto/web3 without clear thesis alignment
-  - Real estate services, legal services
+  - Real estate services, legal services, legal tech
+  - Generic logistics/supply chain (unless clear climate angle like emissions reduction)
+  - Cybersecurity, developer tools, DevOps (unless clear workforce augmentation angle)
+  IMPORTANT: A company in an excluded category should score low even if it uses AI.
+  "AI for [excluded industry]" is still in the excluded industry.
 
 # ─── ADDITIONAL SCORES ───────────────────────────────────────────
 ai_score:
@@ -161,3 +175,6 @@ filter_threshold: 5
 stealth_rules: |
   If a company has no description but its name, keywords, or investors suggest
   thesis alignment, mark stealth=true for manual review.
+  IMPORTANT: Company names containing thesis keywords (e.g., "biotech", "longevity",
+  "solar", "health", "agri", "workforce", "climate", "energy") should ALWAYS be
+  flagged stealth=true even with no other information. Err on the side of flagging.
