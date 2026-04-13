@@ -1,5 +1,5 @@
 # Better Ventures — Founder Scoring Rubric
-# Used by: pitchbook-pipeline, BV-Acceleratorbot, affinity-sync
+# Used by: dealbot, acceleratorbot, stealthbot
 # Edit here to update scoring across all pipelines.
 
 version: 2

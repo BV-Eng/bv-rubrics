@@ -1,5 +1,5 @@
 # Better Ventures — Prestigious Investor & Accelerator Lists
-# Used by: pitchbook-pipeline, BV-Acceleratorbot, affinity-sync
+# Used by: dealbot, acceleratorbot, stealthbot
 # Edit here to update across all pipelines.
 
 version: 1

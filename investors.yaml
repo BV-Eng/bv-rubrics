@@ -1,5 +1,5 @@
 # Better Ventures — Investor Routing Configuration
-# Used by: pitchbook-pipeline, BV-Acceleratorbot
+# Used by: dealbot, acceleratorbot
 # Edit here to update investor assignments across all pipelines.
 
 version: 1

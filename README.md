@@ -25,9 +25,9 @@ Centralized scoring rubrics for Better Ventures deal flow automation. These YAML
 
 These repos fetch rubrics at runtime via raw GitHub URL with local cache fallback:
 
-- [pitchbook-pipeline](https://github.com/BV-Eng/pitchbook-pipeline) — PitchBook company + founder scoring
-- [BV-Acceleratorbot](https://github.com/BV-Eng/BV-Acceleratorbot) — Accelerator company scoring
-- [affinity-sync](https://github.com/BV-Eng/affinity-sync) — Founder scoring from LinkedIn data
+- [dealbot](https://github.com/BV-Eng/dealbot) — PitchBook company + founder scoring
+- [acceleratorbot](https://github.com/BV-Eng/acceleratorbot) — Accelerator company scoring
+- [stealthbot](https://github.com/BV-Eng/stealthbot) — Founder scoring from LinkedIn data
 
 ## How to Edit
 
