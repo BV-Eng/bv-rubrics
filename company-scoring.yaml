@@ -131,28 +131,18 @@ themes:
       Be inclusive here. AI tools that genuinely help workers do their jobs better
       or help SMBs compete count. Don't limit to just "reskilling" programs.
       But generic enterprise SaaS (CRM, marketing automation) does NOT count.
-      CRITICAL: The TARGET USER must be workers, job-seekers, students, tradespeople, or SMB owners.
-      Enterprise automation tools that replace workers (not augment them) do NOT count.
-      NOT workforce (score 1-3 on Opportunity):
-      - Enterprise workflow automation (RPA, agentic AI for enterprises)
-      - AI tools for financial institutions (lending, underwriting, compliance)
-      - Logistics/supply chain optimization
-      - Developer tools, DevOps, security tools
-      - Legal tech, legal automation
-      KEY TEST: Does this product primarily help individual workers or small business owners?
-      If it primarily helps enterprises automate internal processes, score 1-3 on Opportunity.
+      KEY TEST: Does this product primarily help individual workers, job-seekers,
+      students, tradespeople, or small business owners? If yes, score 5+.
+      If the primary buyer is enterprise IT and the product just automates internal
+      processes with no clear worker/SMB empowerment angle, score 3-4.
 
 # ─── EXCLUSIONS ──────────────────────────────────────────────────
 exclusions: |
   These should score LOW (1-3) on ALL themes:
-  - Pure financial services, insurance, wealth management, lending, underwriting
+  - Pure financial services, insurance, wealth management
   - Entertainment, gaming, social media
   - Crypto/web3 without clear thesis alignment
-  - Real estate services, legal services, legal tech
-  - Generic logistics/supply chain (unless clear climate angle like emissions reduction)
-  - Cybersecurity, developer tools, DevOps (unless clear workforce augmentation angle)
-  IMPORTANT: A company in an excluded category should score low even if it uses AI.
-  "AI for [excluded industry]" is still in the excluded industry.
+  - Real estate services, legal services
 
 # ─── ADDITIONAL SCORES ───────────────────────────────────────────
 ai_score:
