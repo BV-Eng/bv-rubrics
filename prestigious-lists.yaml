@@ -2,81 +2,316 @@
 # Used by: dealbot, acceleratorbot, stealthbot
 # Edit here to update across all pipelines.
 
-version: 1
+version: 2
 
-# ─── PRESTIGIOUS VCs ─────────────────────────────────────────────
+# ─── PRESTIGIOUS VCs (~100) ──────────────────────────────────────
 # Companies backed by these VCs with borderline thesis fit (5-6) get flagged for review.
 vcs:
-  - Y Combinator
+  - Sequoia Capital
   - Andreessen Horowitz (a16z)
-  - Sequoia
+  - Benchmark
+  - Accel
+  - Kleiner Perkins
+  - Lightspeed Venture Partners
   - General Catalyst
   - Founders Fund
   - Khosla Ventures
-  - Accel
-  - Benchmark
-  - Greylock
+  - New Enterprise Associates (NEA)
+  - Bessemer Venture Partners
+  - GGV Capital
+  - Tiger Global Management
+  - Coatue Management
+  - Insight Partners
   - Index Ventures
-  - Lightspeed
-  - NEA
-  - Bessemer
-  - First Round Capital
+  - Battery Ventures
+  - Greylock Partners
   - Union Square Ventures
-  - Craft Ventures
-  - 8VC
+  - First Round Capital
+  - Thrive Capital
+  - Ribbit Capital
+  - Spark Capital
+  - Redpoint Ventures
+  - Norwest Venture Partners
+  - IVP (Institutional Venture Partners)
+  - Menlo Ventures
+  - Sapphire Ventures
+  - Canaan Partners
+  - Scale Venture Partners
+  - Felicis Ventures
+  - Floodgate
   - Lux Capital
+  - Maverick Ventures
+  - SV Angel
+  - Social Capital
+  - 8VC
+  - Addition
+  - Altimeter Capital
+  - Amplify Partners
+  - Bain Capital Ventures
+  - Balderton Capital
+  - Bedrock Capital
+  - Bond Capital
+  - Breyer Capital
+  - CRV (Charles River Ventures)
+  - D1 Capital Partners
+  - DST Global
+  - Dragoneer Investment Group
+  - Eclipse Ventures
+  - Emergence Capital
+  - EQT Ventures
+  - Fifth Wall
+  - Forerunner Ventures
+  - General Atlantic
+  - Greenoaks Capital
+  - Highland Capital Partners
+  - Horizons Ventures
+  - Iconiq Capital
+  - JMI Equity
+  - KKR Growth
+  - Lowercase Capital
+  - Matrix Partners
+  - Meritech Capital Partners
+  - Mithril Capital
+  - Notable Capital
+  - Obvious Ventures
+  - Paradigm
+  - QED Investors
+  - Quiet Capital
+  - Radical Ventures
+  - Reach Capital
+  - Revolution (Rise of the Rest)
+  - Salesforce Ventures
+  - Shasta Ventures
+  - SignalFire
+  - Silver Lake
+  - SoftBank Vision Fund
+  - Summit Partners
+  - TCV (Technology Crossover Ventures)
+  - Temasek
+  - True Ventures
+  - Two Sigma Ventures
+  - Valor Equity Partners
+  - Venrock
+  - Versant Ventures
+  - Craft Ventures
+  - Y Combinator Continuity Fund
+  - GIC Ventures
+  - Goldman Sachs Growth Equity
+  - Wellington Management
+  - T. Rowe Price
 
-# Normalized names for matching (lowercase, no spaces)
+# Normalized names for matching (lowercase)
 vc_match_terms:
-  - y combinator
-  - yc
+  - sequoia
   - andreessen horowitz
   - a16z
-  - sequoia
+  - benchmark
+  - accel
+  - kleiner perkins
+  - lightspeed
   - general catalyst
   - founders fund
   - khosla
-  - accel
-  - benchmark
-  - greylock
-  - index ventures
-  - lightspeed
   - nea
+  - new enterprise associates
   - bessemer
-  - first round
+  - ggv
+  - tiger global
+  - coatue
+  - insight partners
+  - index ventures
+  - battery ventures
+  - greylock
   - union square
-  - craft ventures
-  - 8vc
+  - first round
+  - thrive capital
+  - ribbit
+  - spark capital
+  - redpoint
+  - norwest
+  - ivp
+  - menlo ventures
+  - sapphire
+  - canaan
+  - scale venture
+  - felicis
+  - floodgate
   - lux capital
+  - maverick
+  - sv angel
+  - social capital
+  - 8vc
+  - addition
+  - altimeter
+  - amplify partners
+  - bain capital ventures
+  - balderton
+  - bedrock
+  - bond capital
+  - breyer
+  - crv
+  - charles river
+  - d1 capital
+  - dst global
+  - dragoneer
+  - eclipse ventures
+  - emergence
+  - eqt ventures
+  - fifth wall
+  - forerunner
+  - general atlantic
+  - greenoaks
+  - highland capital
+  - horizons ventures
+  - iconiq
+  - jmi equity
+  - kkr
+  - lowercase capital
+  - matrix partners
+  - meritech
+  - mithril
+  - notable capital
+  - obvious ventures
+  - paradigm
+  - qed investors
+  - quiet capital
+  - radical ventures
+  - reach capital
+  - revolution
+  - salesforce ventures
+  - shasta
+  - signalfire
+  - silver lake
+  - softbank
+  - summit partners
+  - tcv
+  - temasek
+  - true ventures
+  - two sigma
+  - valor equity
+  - venrock
+  - versant
+  - craft ventures
+  - yc continuity
+  - gic
+  - goldman sachs
+  - wellington
+  - t. rowe price
 
-# ─── TOP ACCELERATORS ───────────────────────────────────────────
+# ─── TOP ACCELERATORS (~30) ──────────────────────────────────────
 accelerators:
   - Y Combinator
   - Techstars
+  - 500 Global
+  - Plug and Play Tech Center
   - IndieBio
+  - Creative Destruction Lab (CDL)
+  - MassChallenge
+  - Alchemist Accelerator
+  - SOSV
+  - Antler
+  - Entrepreneur First (EF)
+  - HAX
+  - Gener8tor
+  - Dreamit Ventures
+  - StartX (Stanford)
+  - Seedcamp
+  - Station F
+  - Founders Factory
+  - Startupbootcamp
+  - Microsoft for Startups
+  - Google for Startups Accelerator
+  - NVIDIA Inception
+  - Intel Ignite
+  - Elemental Excelerator
+  - Greentown Labs
   - Activate
-  - 500 Startups
-  - Plug and Play
+  - Cyclotron Road
+  - The Engine (MIT)
+  - Larta Institute
+  - Techstars Climate
 
-# ─── NOTABLE ANGELS ──────────────────────────────────────────────
+# ─── NOTABLE ANGELS (~40) ────────────────────────────────────────
 angels:
-  - Paul Graham
-  - Reid Hoffman
-  - Elad Gil
-  - Dharmesh Shah
-  - Peter Thiel
-  - Marc Andreessen
-  - Chris Sacca
   - Naval Ravikant
+  - Elad Gil
+  - Ron Conway
+  - Esther Dyson
+  - Jason Calacanis
   - Balaji Srinivasan
+  - Marc Andreessen
+  - Reid Hoffman
+  - Peter Thiel
+  - Ashton Kutcher
+  - Chris Sacca
+  - Tim Ferriss
+  - Alexis Ohanian
+  - Gary Vaynerchuk
+  - Mark Cuban
+  - Keith Rabois
+  - Josh Buckley
+  - Cyan Banister
+  - Scott Belsky
+  - Fabrice Grinda
+  - David Sacks
+  - Babak Nivi
+  - Gil Penchina
+  - Jeff Bezos
+  - Ram Shriram
+  - Mike Maples Jr.
+  - Aydin Senkut
+  - Matt Mullenweg
+  - Sahil Lavingia
+  - Li Jin
+  - Hunter Walk
+  - Semil Shah
+  - Harry Stebbings
+  - Max Levchin
+  - Vinod Khosla
+  - Gokul Rajaram
+  - Lachy Groom
+  - Dylan Field
+  - Paul Graham
+  - Dharmesh Shah
 
 angel_match_terms:
-  - paul graham
-  - reid hoffman
-  - elad gil
-  - dharmesh shah
-  - peter thiel
-  - marc andreessen
-  - chris sacca
   - naval ravikant
+  - elad gil
+  - ron conway
+  - esther dyson
+  - jason calacanis
   - balaji srinivasan
+  - marc andreessen
+  - reid hoffman
+  - peter thiel
+  - ashton kutcher
+  - chris sacca
+  - tim ferriss
+  - alexis ohanian
+  - gary vaynerchuk
+  - mark cuban
+  - keith rabois
+  - josh buckley
+  - cyan banister
+  - scott belsky
+  - fabrice grinda
+  - david sacks
+  - babak nivi
+  - gil penchina
+  - jeff bezos
+  - ram shriram
+  - mike maples
+  - aydin senkut
+  - matt mullenweg
+  - sahil lavingia
+  - li jin
+  - hunter walk
+  - semil shah
+  - harry stebbings
+  - max levchin
+  - vinod khosla
+  - gokul rajaram
+  - lachy groom
+  - dylan field
+  - paul graham
+  - dharmesh shah
