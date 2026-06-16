@@ -99,8 +99,29 @@ themes:
       - reduce cost of care
       - clinical workflows
       - patient monitoring
+      - nutraceutical
+      - healthspan
+      - healthy aging
+      - biological age
+      - preventive health
+      - preventive medicine
+      - proactive health
+      - functional medicine
+      - functional food
+      - personalized nutrition
+      - precision nutrition
+      - precision medicine
+      - foodtech
+      - gut health
+      - microbiome
+      - prebiotics
+      - postbiotics
+      - synbiotics
+      - bioactive
+      - biomarker
     notes: |
-      Food as Medicine YES: therapeutic diets, functional foods, nutrition science.
+      Food as Medicine YES: therapeutic diets, functional foods, nutraceuticals,
+      bioactive compounds, nutrition science.
       Food as Medicine NO: generic meal delivery, meal kits, restaurant tech.
 
   workforce:
@@ -143,7 +164,9 @@ exclusions: |
   - Entertainment, gaming, social media
   - Crypto/web3 without clear thesis alignment
   - Real estate services, legal services
-  - Therapeutics and drug discovery
+  - Traditional pharma drug discovery and FDA-regulated small molecule therapeutics
+    (nutraceuticals, functional foods, bioactive compounds, and food-as-medicine
+    science are NOT excluded — these align with Health/Longevity)
   - Pet related businesses
   - Alcohol related businesses
 
